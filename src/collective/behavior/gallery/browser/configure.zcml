@@ -18,4 +18,13 @@
       directory="static"
       />
 
+  <browser:viewlet
+      for="..behaviors.folderish_gallery.IFolderishGallery"
+      name="collective.behavior.gallery.gallery"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+      class=".viewlet.GalleryViewlet"
+      permission="zope.Public"
+      layer="..interfaces.ICollectiveBehaviorGalleryLayer"
+      />
+
 </configure>

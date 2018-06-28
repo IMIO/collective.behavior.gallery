@@ -15,8 +15,9 @@
         description="Adds a gallery to Folderish content types, which shows their contained images"
         provides=".folderish_gallery.IFolderishGallery"
         factory=".folderish_gallery.FolderishGallery"
+        for="plone.dexterity.interfaces.IDexterityContainer"
         marker=".folderish_gallery.IFolderishGallery"
         />
 
-        
+
 </configure>
