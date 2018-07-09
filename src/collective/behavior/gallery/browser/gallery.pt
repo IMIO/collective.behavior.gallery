@@ -8,13 +8,12 @@
   <div class="gallery-photo"
        tal:repeat="photo photos">
 
-    <a href="" title="" style="" rel="gallery"
-       tal:define="title photo/Title;
-                   image_url python: view.image_url(photo)"
-       tal:attributes="href photo/absolute_url;
-                       style string:background-image: url(${image_url});
-                       title title">
-    </a>
+      <a href="" data-caption="" data-fancybox="gallery"
+         tal:attributes="href photo/absolute_url;
+                         data-caption photo/Title">
+          <img src=""
+               tal:attributes="src python: view.image_url(photo)"  />
+      </a>
 
   </div>
 
