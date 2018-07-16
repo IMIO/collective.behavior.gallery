@@ -5,7 +5,8 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Simplify listing view to show thumbnails only once
+  [daggelpop]
 
 
 1.0a1 (2018-07-10)

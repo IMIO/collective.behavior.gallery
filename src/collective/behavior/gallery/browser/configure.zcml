@@ -27,4 +27,22 @@
       layer="..interfaces.ICollectiveBehaviorGalleryLayer"
       />
 
+  <browser:page
+      name="view"
+      for="..behaviors.folderish_gallery.IFolderishGallery"
+      layer="..interfaces.ICollectiveBehaviorGalleryLayer"
+      class="plone.app.contenttypes.browser.folder.FolderView"
+      template="listview.pt"
+      permission="zope2.View"
+      />
+
+    <browser:page
+      name="listing_view"
+      for="..behaviors.folderish_gallery.IFolderishGallery"
+      layer="..interfaces.ICollectiveBehaviorGalleryLayer"
+      class="plone.app.contenttypes.browser.folder.FolderView"
+      template="listview.pt"
+      permission="zope2.View"
+      />
+
 </configure>
