@@ -3,7 +3,7 @@
      tal:condition="photos"
      i18n:domain="collective.behavior.gallery">
 
-  <h2 i18n:translate="">Gallery</h2>
+  <legend i18n:translate="">Gallery</legend>
 
   <div class="gallery-photo"
        tal:repeat="photo photos">

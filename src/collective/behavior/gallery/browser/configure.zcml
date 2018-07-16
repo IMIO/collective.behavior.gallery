@@ -27,21 +27,23 @@
       layer="..interfaces.ICollectiveBehaviorGalleryLayer"
       />
 
+  <!-- view for folders -->
   <browser:page
-      name="view"
-      for="..behaviors.folderish_gallery.IFolderishGallery"
-      layer="..interfaces.ICollectiveBehaviorGalleryLayer"
-      class="plone.app.contenttypes.browser.folder.FolderView"
-      template="listview.pt"
-      permission="zope2.View"
-      />
-
-    <browser:page
       name="listing_view"
       for="..behaviors.folderish_gallery.IFolderishGallery"
       layer="..interfaces.ICollectiveBehaviorGalleryLayer"
       class="plone.app.contenttypes.browser.folder.FolderView"
-      template="listview.pt"
+      template="folder_view.pt"
+      permission="zope2.View"
+      />
+
+  <!-- view for custom content types (shows custom fields) -->
+  <browser:page
+      name="view"
+      for="..behaviors.folderish_gallery.IFolderishGallery"
+      layer="..interfaces.ICollectiveBehaviorGalleryLayer"
+      class="plone.dexterity.browser.view.DefaultView"
+      template="custom_view.pt"
       permission="zope2.View"
       />
 

@@ -5,7 +5,8 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Adapt view for custom content types
+  [daggelpop]
 
 
 1.0a2 (2018-07-16)
