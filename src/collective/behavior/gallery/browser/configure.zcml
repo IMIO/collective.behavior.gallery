@@ -32,7 +32,7 @@
       name="listing_view"
       for="..behaviors.folderish_gallery.IFolderishGallery"
       layer="..interfaces.ICollectiveBehaviorGalleryLayer"
-      class="plone.app.contenttypes.browser.folder.FolderView"
+      class=".folder_view.PicturelessFolderView"
       template="folder_view.pt"
       permission="zope2.View"
       />
