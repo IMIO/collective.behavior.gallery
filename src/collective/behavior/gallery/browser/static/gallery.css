@@ -1,5 +1,7 @@
-.gallery-photos {
-	height: 70%;
+#gallery-photos:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .gallery-photo a {
