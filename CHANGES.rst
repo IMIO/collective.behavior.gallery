@@ -5,7 +5,8 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add a viewlet for non-picture content
+  [daggelpop]
 
 
 1.0a4 (2018-07-17)

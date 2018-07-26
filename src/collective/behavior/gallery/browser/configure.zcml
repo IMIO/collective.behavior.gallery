@@ -27,6 +27,15 @@
       layer="..interfaces.ICollectiveBehaviorGalleryLayer"
       />
 
+  <browser:viewlet
+      for="..behaviors.folderish_gallery.IFolderishGallery"
+      name="collective.behavior.gallery.files"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+      class=".viewlet.FilesViewlet"
+      permission="zope.Public"
+      layer="..interfaces.ICollectiveBehaviorGalleryLayer"
+      />
+
   <!-- view for folders -->
   <browser:page
       name="listing_view"

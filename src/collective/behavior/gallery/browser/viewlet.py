@@ -24,3 +24,9 @@ class GalleryViewlet(ViewletBase):
         if image:
             url = image.url
         return url
+
+
+class FilesViewlet(ViewletBase):
+    """ A viewlet which renders files """
+
+    index = ViewPageTemplateFile('files.pt')
