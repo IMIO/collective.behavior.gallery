@@ -7,3 +7,10 @@ def reload_gs_profile(context):
         context,
         'profile-collective.behavior.gallery:default',
     )
+
+
+def reload_registry_profile(context):
+    context.runImportStepFromProfile(
+        'profile-collective.behavior.gallery:default',
+        'plone.app.registry'
+    )
