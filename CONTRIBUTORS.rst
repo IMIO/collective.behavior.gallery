@@ -1,4 +1,5 @@
 Contributors
 ============
 
-- Nicolas Demonte, support@lists.affinitic.be
+- Nicolas Demonte, nicolas@affinitic.be, Original Author [Affinitic]
+- Laurent Lasudry, laurent.lasudry@affinitic.be [Affinitic]

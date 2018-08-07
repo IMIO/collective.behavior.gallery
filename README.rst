@@ -6,25 +6,16 @@
 collective.behavior.gallery
 ===========================
 
-Tell me what your product does
+This product allows you to display a gallery viewlet with all the images
+of a folderish content type.
+
 
 Features
 --------
 
-- Can be bullet points
-
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
+- The behavior can be defined on any folderish content type
+- The thumbs shown in gallery don't show in folder content anymore to avoid duplicates
+- Gallery images open in overlay with previous / next navigation
 
 
 Translations
@@ -32,7 +23,7 @@ Translations
 
 This product has been translated into
 
-- Klingon (thanks, K'Plai)
+- French
 
 
 Installation
@@ -48,22 +39,18 @@ Install collective.behavior.gallery by adding it to your buildout::
         collective.behavior.gallery
 
 
-and then running ``bin/buildout``
+and then running ``bin/buildout``.
+
+You can then install the package in ``plone_control_panel`` and activate the
+``FolderishGallery`` behavior on the Dexterity folderish content types you
+want.
 
 
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/collective.behavior.gallery/issues
-- Source Code: https://github.com/collective/collective.behavior.gallery
-- Documentation: https://docs.plone.org/foo/bar
-
-
-Support
--------
-
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+- Issue Tracker: https://github.com/IMIO/collective.behavior.gallery/issues
+- Source Code: https://github.com/IMIO/collective.behavior.gallery
 
 
 License

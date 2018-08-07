@@ -5,6 +5,9 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
+- Fix viewlet overflows
+  [daggelpop]
+
 - Add a viewlet for non-picture content
   [daggelpop]
 
