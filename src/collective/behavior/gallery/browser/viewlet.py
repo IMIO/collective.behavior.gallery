@@ -13,7 +13,8 @@ class GalleryViewlet(ViewletBase):
         brains = api.content.find(
             context=self.context,
             depth=1,
-            portal_type='Image'
+            portal_type='Image',
+            sort_on='getObjPositionInParent'
         )
         return [b.getObject() for b in brains]
 

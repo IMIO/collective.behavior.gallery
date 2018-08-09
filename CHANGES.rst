@@ -5,6 +5,9 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
+- Sort images with position in parent
+  [vpiret]
+
 - Fix viewlet overflows
   [daggelpop]
 
