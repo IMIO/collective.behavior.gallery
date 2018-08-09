@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a5 (unreleased)
+1.0a5 (2018-08-09)
 ------------------
 
 - Sort images with position in parent
