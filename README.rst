@@ -15,6 +15,7 @@ Features
 
 - The behavior can be defined on any folderish content type
 - The thumbs shown in gallery don't show in folder content anymore to avoid duplicates
+- Content files (other than pictures) are displayed in a specific viewlet, making it movable
 - Gallery images open in overlay with previous / next navigation
 
 
