@@ -1,4 +1,5 @@
 <div id="files-viewlet"
+     tal:condition="context/hasChildNodes"
      i18n:domain="plone">
 
   <legend i18n:translate="">Content</legend>
