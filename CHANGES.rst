@@ -5,7 +5,8 @@ Changelog
 1.0a6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Hide Files widget when object has none
+  [daggelpop]
 
 
 1.0a5 (2018-08-09)
