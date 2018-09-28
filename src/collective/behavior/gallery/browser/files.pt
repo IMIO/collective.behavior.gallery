@@ -1,10 +1,12 @@
 <div id="files-viewlet"
-     tal:condition="context/hasChildNodes"
      i18n:domain="plone">
 
-  <legend i18n:translate="">Content</legend>
-  <tal:block define="view nocall:context/listing_view; listing_macro view/macros/listing|view/index/macros/listing">
+  <tal:block define="view nocall:context/listing_view"
+              tal:condition="view/batch">
+       <legend i18n:translate="">Content</legend>
+      <tal:macro define="listing_macro view/macros/listing|view/index/macros/listing">
           <metal:use_macro use-macro="listing_macro" />
-      </tal:block>
+      </tal:macro>
+  </tal:block>
 
 </div>
