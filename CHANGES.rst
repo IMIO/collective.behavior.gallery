@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a7 (unreleased)
+1.0a7 (2020-09-01)
 ------------------
 
 - Avoid page refresh after gallery modal close
