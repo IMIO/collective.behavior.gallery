@@ -5,7 +5,8 @@ Changelog
 1.0a7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Avoid page refresh after gallery modal close
+  [laulaz]
 
 
 1.0a6 (2018-09-28)

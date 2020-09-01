@@ -256,7 +256,7 @@
 
     // Hash value when initializing manually,
     // set `false` to disable hash change
-    hash: null,
+    hash: false,
 
     // Customize or add new media types
     // Example:
