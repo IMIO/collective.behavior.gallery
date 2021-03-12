@@ -10,8 +10,8 @@ from zope.interface import provider
 
 @provider(IFormFieldProvider)
 class IFolderishGallery(model.Schema):
-    """
-    """
+    """"""
+
     pass
 
 

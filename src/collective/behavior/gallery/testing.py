@@ -21,7 +21,7 @@ class CollectiveBehaviorGalleryLayer(PloneSandboxLayer):
         self.loadZCML(package=collective.behavior.gallery)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'collective.behavior.gallery:default')
+        applyProfile(portal, "collective.behavior.gallery:default")
 
 
 COLLECTIVE_BEHAVIOR_GALLERY_FIXTURE = CollectiveBehaviorGalleryLayer()
@@ -29,13 +29,13 @@ COLLECTIVE_BEHAVIOR_GALLERY_FIXTURE = CollectiveBehaviorGalleryLayer()
 
 COLLECTIVE_BEHAVIOR_GALLERY_INTEGRATION_TESTING = IntegrationTesting(
     bases=(COLLECTIVE_BEHAVIOR_GALLERY_FIXTURE,),
-    name='CollectiveBehaviorGalleryLayer:IntegrationTesting',
+    name="CollectiveBehaviorGalleryLayer:IntegrationTesting",
 )
 
 
 COLLECTIVE_BEHAVIOR_GALLERY_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(COLLECTIVE_BEHAVIOR_GALLERY_FIXTURE,),
-    name='CollectiveBehaviorGalleryLayer:FunctionalTesting',
+    name="CollectiveBehaviorGalleryLayer:FunctionalTesting",
 )
 
 
@@ -45,5 +45,5 @@ COLLECTIVE_BEHAVIOR_GALLERY_ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name='CollectiveBehaviorGalleryLayer:AcceptanceTesting',
+    name="CollectiveBehaviorGalleryLayer:AcceptanceTesting",
 )
