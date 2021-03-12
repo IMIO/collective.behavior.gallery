@@ -5,7 +5,8 @@ Changelog
 1.0a8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Upgrade to Plone 5.2 / Python 3
+  [laulaz]
 
 
 1.0a7 (2020-09-01)

@@ -8,6 +8,12 @@ from collective.behavior.gallery.testing import COLLECTIVE_BEHAVIOR_GALLERY_INTE
 import unittest
 
 
+try:
+    from Products.CMFPlone.utils import get_installer
+except ImportError:
+    get_installer = None
+
+
 class TestSetup(unittest.TestCase):
     """Test that collective.behavior.gallery is properly installed."""
 
@@ -16,7 +22,10 @@ class TestSetup(unittest.TestCase):
     def setUp(self):
         """Custom shared utility setup for tests."""
         self.portal = self.layer['portal']
-        self.installer = api.portal.get_tool('portal_quickinstaller')
+        if get_installer:
+            self.installer = get_installer(self.portal, self.layer['request'])
+        else:
+            self.installer = api.portal.get_tool('portal_quickinstaller')
 
     def test_product_installed(self):
         """Test if collective.behavior.gallery is installed."""
@@ -39,7 +48,10 @@ class TestUninstall(unittest.TestCase):
 
     def setUp(self):
         self.portal = self.layer['portal']
-        self.installer = api.portal.get_tool('portal_quickinstaller')
+        if get_installer:
+            self.installer = get_installer(self.portal, self.layer['request'])
+        else:
+            self.installer = api.portal.get_tool('portal_quickinstaller')
         roles_before = api.user.get_roles(TEST_USER_ID)
         setRoles(self.portal, TEST_USER_ID, ['Manager'])
         self.installer.uninstallProducts(['collective.behavior.gallery'])
