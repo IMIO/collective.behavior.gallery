@@ -5,6 +5,9 @@ Changelog
 1.0a8 (unreleased)
 ------------------
 
+- Viewlets code refactoring
+  [laulaz]
+
 - Upgrade to Plone 5.2 / Python 3
   [laulaz]
 
