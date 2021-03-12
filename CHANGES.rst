@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a8 (unreleased)
+1.0b1 (2021-03-12)
 ------------------
 
 - Viewlets code refactoring
