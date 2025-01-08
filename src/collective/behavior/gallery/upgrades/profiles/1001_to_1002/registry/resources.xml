@@ -1,5 +1,15 @@
 <?xml version="1.0"?>
 <registry>
+
+    <records prefix="plone.resources/jquery-fancybox"
+             interface="Products.CMFPlone.interfaces.IResourceRegistry"
+             remove="true" />
+
+   <records prefix="plone.resources/collective-behavior-gallery"
+            interface="Products.CMFPlone.interfaces.IResourceRegistry"
+            remove="true" />
+
+
     <records prefix="plone.bundles/jquery-fancybox"
              interface="Products.CMFPlone.interfaces.IBundleRegistry">
       <value key="depends">plone</value>
@@ -18,5 +28,4 @@
       <value key="load_async">False</value>
       <value key="load_defer">False</value>
     </records>
-    
 </registry>
