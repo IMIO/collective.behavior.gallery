@@ -11,6 +11,11 @@ class HiddenProfiles(object):
             "collective.behavior.gallery:uninstall",
         ]
 
+    def getNonInstallableProducts(self):
+        """Hide unwanted products from site-creation and quickinstaller."""
+        return [
+            "collective.behavior.gallery.upgrades",
+        ]
 
 def post_install(context):
     """Post install script"""
