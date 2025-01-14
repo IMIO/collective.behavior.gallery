@@ -5,7 +5,7 @@ from plone.app.layout.viewlets import ViewletBase
 
 
 class GalleryViewlet(ViewletBase):
-    """ A viewlet which renders the gallery """
+    """A viewlet which renders the gallery"""
 
     index = ViewPageTemplateFile("gallery.pt")
 
@@ -28,6 +28,6 @@ class GalleryViewlet(ViewletBase):
 
 
 class FilesViewlet(ViewletBase):
-    """ A viewlet which renders files """
+    """A viewlet which renders files"""
 
     index = ViewPageTemplateFile("files.pt")
