@@ -17,6 +17,7 @@ class HiddenProfiles(object):
             "collective.behavior.gallery.upgrades",
         ]
 
+
 def post_install(context):
     """Post install script"""
     # Do something at the end of the installation of this package.
