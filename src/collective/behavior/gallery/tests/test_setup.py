@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
+
 from plone import api
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
@@ -8,7 +9,6 @@ from collective.behavior.gallery.testing import (
 )  # noqa
 
 import unittest
-
 
 try:
     from Products.CMFPlone.utils import get_installer
@@ -32,7 +32,7 @@ class TestSetup(unittest.TestCase):
     def test_product_installed(self):
         """Test if collective.behavior.gallery is installed."""
         self.assertTrue(
-            self.installer.isProductInstalled("collective.behavior.gallery")
+            self.installer.is_product_installed("collective.behavior.gallery")
         )
 
     def test_browserlayer(self):
@@ -57,13 +57,13 @@ class TestUninstall(unittest.TestCase):
             self.installer = api.portal.get_tool("portal_quickinstaller")
         roles_before = api.user.get_roles(TEST_USER_ID)
         setRoles(self.portal, TEST_USER_ID, ["Manager"])
-        self.installer.uninstallProducts(["collective.behavior.gallery"])
+        self.installer.uninstall_product("collective.behavior.gallery")
         setRoles(self.portal, TEST_USER_ID, roles_before)
 
     def test_product_uninstalled(self):
         """Test if collective.behavior.gallery is cleanly uninstalled."""
         self.assertFalse(
-            self.installer.isProductInstalled("collective.behavior.gallery")
+            self.installer.is_product_installed("collective.behavior.gallery")
         )
 
     def test_browserlayer_removed(self):

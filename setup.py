@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 """Installer for the collective.behavior.gallery package."""
 
-from setuptools import find_packages
+from setuptools import find_namespace_packages
 from setuptools import setup
-
 
 long_description = "\n\n".join(
     [
@@ -16,19 +15,19 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.behavior.gallery",
-    version='1.0b2.dev0',
+    version="1.0b2.dev0",
     description="Add a gallery of images to Folderish content types",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 5.0",
-        "Framework :: Plone :: 5.1",
-        "Framework :: Plone :: 5.2",
+        "Framework :: Plone :: 6.2",
+        "Framework :: Plone :: Addon",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
@@ -37,8 +36,7 @@ setup(
     author_email="support@lists.affinitic.be",
     url="https://pypi.python.org/pypi/collective.behavior.gallery",
     license="GPL version 2",
-    packages=find_packages("src", exclude=["ez_setup"]),
-    namespace_packages=["collective", "collective.behavior"],
+    packages=find_namespace_packages("src", exclude=["ez_setup"]),
     package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,

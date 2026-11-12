@@ -1,30 +1,22 @@
 <?xml version="1.0"?>
 <registry>
-    <records prefix="plone.resources/jquery-fancybox"
-         interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-      <value key="js">++plone++collective.behavior.gallery/jquery.fancybox.js</value>
-      <value key="css">
-        <element>++plone++collective.behavior.gallery/jquery.fancybox.css</element>
-      </value>
-    </records>
-
-    <records prefix="plone.resources/collective-behavior-gallery"
-         interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-      <value key="css">
-        <element>++plone++collective.behavior.gallery/gallery.css</element>
-      </value>
+    <records prefix="plone.bundles/jquery-fancybox"
+             interface="Products.CMFPlone.interfaces.IBundleRegistry">
+      <value key="depends">plone</value>
+      <value key="enabled">True</value>
+      <value key="csscompilation">++plone++collective.behavior.gallery/jquery.fancybox.css</value>  
+      <value key="jscompilation">++plone++collective.behavior.gallery/jquery.fancybox.js</value>
+      <value key="load_async">False</value>
+      <value key="load_defer">False</value>
     </records>
 
     <records prefix="plone.bundles/collective-behavior-gallery"
-            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
-    <value key="resources">
-      <element>jquery-fancybox</element>
-      <element>collective-behavior-gallery</element>
-    </value>
-    <value key="enabled">True</value>
-    <value key="compile">False</value>
-    <value key="csscompilation">++plone++collective.behavior.gallery/gallery.min.css</value>
-    <value key="jscompilation">++plone++collective.behavior.gallery/jquery-fancybox-compiled.js</value>
-    <value key="depends">plone</value>
-  </records>
+             interface="Products.CMFPlone.interfaces.IBundleRegistry">
+      <value key="depends">jquery-fancybox</value>
+      <value key="enabled">True</value>
+      <value key="csscompilation">++plone++collective.behavior.gallery/gallery.css</value>      
+      <value key="load_async">False</value>
+      <value key="load_defer">False</value>
+    </records>
+    
 </registry>

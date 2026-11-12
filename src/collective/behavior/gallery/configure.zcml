@@ -14,11 +14,12 @@
   <!--<includeDependencies package="." />-->
 
   <include package=".browser" />
+  <include package=".upgrades" />
   <include package=".viewlets" />
 
   <include file="permissions.zcml" />
 
-  <include file="upgrades.zcml" />
+  
 
   <genericsetup:registerProfile
       name="default"

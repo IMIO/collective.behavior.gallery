@@ -1,0 +1,20 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  full-test:
+    uses: IMIO/gha-workflows/.github/workflows/package-full-test.yml@v1
+    secrets:
+      gh_token: ${{ secrets.TOKEN_GITHUB_RO }}
+      mattermost_webhook_url: ${{ secrets.SMARTWEB_MATTERMOST_WEBHOOK_URL }}
+    with:
+      check_path: |
+        collective/behavior/gallery
+      coverage_python_version: '3.12'
+      python_versions: '["3.12", "3.13"]'
+      runner_label: gha-runners-smartweb
