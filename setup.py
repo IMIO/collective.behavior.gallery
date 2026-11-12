@@ -15,7 +15,7 @@ long_description = "\n\n".join(
 
 setup(
     name="collective.behavior.gallery",
-    version="1.0b2.dev0",
+    version="2.0.0",
     description="Add a gallery of images to Folderish content types",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
