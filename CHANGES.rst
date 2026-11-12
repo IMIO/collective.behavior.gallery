@@ -8,6 +8,9 @@ Changelog
 - Switch to PEP 420 native namespace package.
   [remdub]
 
+- Migrate dev environment and CI to Plone 6.2.3, update classifiers.
+  [remdub]
+
 
 1.0b1 (2021-03-12)
 ------------------
